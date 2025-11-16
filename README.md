@@ -23,6 +23,8 @@ bundle add rack-bacoo
 With Rails:
 
 ```ruby
+# config/initializers/rack-bacoo.rb
+
 config = {
   encrypt_cookie_with: Rails.application.secret_key_base,
   paths: [ Regexp.new("^(?!/up$)") ], # All paths but /up
